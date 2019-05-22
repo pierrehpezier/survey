@@ -1,0 +1,18 @@
+<html>
+<head><title>Results</title></head>
+<body>
+<h1>Results</h1>
+Votants: {{ voicecount }}<br/><br/>
+
+<table>
+{% for item in scores %}
+  <tr>
+    <td>{{ item }}</td>
+    <td>{{ scores[item] }}</td>
+  </tr>
+
+{% endfor %}
+
+</table>
+
+</body></html>

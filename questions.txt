@@ -1,0 +1,7 @@
+DLL Hijacking / DLL Injection
+Outil Crappy - Cross compilation et recherche de credentials
+Ecriture de shellcodes en C
+Trojan suite: Obfuscation, approche plus générique
+Code cave with PIN tools
+PE Packing
+UPX Patching

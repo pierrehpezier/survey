@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+
+
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+  <div class="rb-box">
+
+
+{% for item in choicelist %}
+  <p>{{ item }}</p>
+  <div id="rb-{{ loop.index0 }}" class="rb">
+    <div class="rb-tab rb-tab-active" data-value="0">
+      <div class="rb-spot">
+        <span class="rb-txt">0</span>
+      </div>
+    </div><div class="rb-tab" data-value="1">
+      <div class="rb-spot">
+        <span class="rb-txt">1</span>
+      </div>
+    </div><div class="rb-tab" data-value="2">
+      <div class="rb-spot">
+        <span class="rb-txt">2</span>
+      </div>
+    </div><div class="rb-tab" data-value="3">
+      <div class="rb-spot">
+        <span class="rb-txt">3</span>
+      </div>
+    </div><div class="rb-tab" data-value="4">
+      <div class="rb-spot">
+        <span class="rb-txt">4</span>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+
+  <!-- Button -->
+  <div class="button-box">
+    <button class="button trigger">Submit!</button>
+  </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>
